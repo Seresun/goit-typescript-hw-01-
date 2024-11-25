@@ -14,13 +14,3 @@ class DataCollection<T> {
   }
 }
 
-// Пример использования:
-const stringCollection = new DataCollection<string>();
-stringCollection.addItem('Hello');
-stringCollection.addItem('World');
-console.log(stringCollection.getAllItems()); // ['Hello', 'World']
-
-const numberCollection = new DataCollection<number>();
-numberCollection.addItem(1);
-numberCollection.addItem(42);
-console.log(numberCollection.getAllItems()); // [1, 42]
