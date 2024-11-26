@@ -1,4 +1,5 @@
-function mergeObjects<T, U>(obj1: T, obj2: U): T & U {
-  return { ...obj1, ...obj2 };
+function merge<T extends object,U extends object> (objA:T, objB:U) {
+  return Object.assign({},objA,objB);
 }
 
+export default merge;

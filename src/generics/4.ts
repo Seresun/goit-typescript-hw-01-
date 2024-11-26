@@ -1,16 +1,17 @@
-class DataCollection<T> {
-  private items: T[] = [];
+type User = {
+  name: string;
+  surname: string;
+  email: string;
+  password: string;
+};
 
-  addItem(item: T): void {
-    this.items.push(item);
-  }
-
-  getItem(index: number): T | undefined {
-    return this.items[index];
-  }
-
-  getAllItems(): T[] {
-    return this.items;
-  }
+function createOrUpdateUser(initialValues: Partial<User>) {
+  // Оновлення користувача
 }
 
+createOrUpdateUser({
+  email: "user@mail.com",
+  password: "password123",
+});
+
+export default createOrUpdateUser;
